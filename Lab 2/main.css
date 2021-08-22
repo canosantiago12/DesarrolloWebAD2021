@@ -1,3 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+
+*  {
+	font-family: 'Open Sans', sans-serif;
+}
+
 body {
-	background-color: gray;
+	background-color: #F1FAEE;
+}
+
+.email {
+	color: #A8DADC;
+}
+
+.banner {
+	padding: 10px;
+	font-weight: 600;
+	color: #E63946;
+}
+
+.banner h1 {
+	color: #1D3557;
+}
+
+h2 {
+	color: #457B9D;
+}
+
+b {
+	color: #1D3557;
+}
+
+.button {
+	background-color: #A8DADC;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	border: none;
+	padding: 12px 28px;
+	color: #1D3557;
+	border-radius: 8px;
+	float: left;
+	margin: 4px 2px;
+	transition: 0.3s;
+	box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: #F1FAEE;
 }
