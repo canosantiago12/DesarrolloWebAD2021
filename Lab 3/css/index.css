@@ -6,9 +6,179 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo > img {
   width: 50px;
+}
+
+/* Smartphone */
+@media only screen and (max-width: 767px) {
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  .hamburger {
+    background-color: gray;
+    color: white;
+    text-align: end;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .product {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    text-align: center;
+    border: 2px solid darkgray;
+    border-radius: 5px;
+    margin: 10px 10px;
+    padding: 5px;
+  }
+
+  .social {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .social_icon {
+    list-style-type: none;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+  }
+
+  .logo {
+    align-self: center;
+  }
+
+  .hamburger {
+    background-color: gray;
+    color: white;
+    text-align: end;
+    margin: 0px 5px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .product {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    text-align: center;
+    border: 2px solid darkgray;
+    border-radius: 5px;
+    margin: 10px 10px;
+    padding: 5px;
+  }
+
+  footer {
+    margin-top: auto;
+  }
+
+  .social {
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+    border-top: 2px solid darkgray;
+    padding-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .social_icon {
+    list-style-type: none;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1025px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+  }
+
+  .navbar {
+    background-color: gray;
+    color: white
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .menu li {
+    padding: 0px 20px;
+  }
+
+  .help {
+    margin-left: 40px;
+  }
+  
+  main {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .product {
+    text-align: center;
+    border: 2px solid darkgray;
+    border-radius: 5px;
+    height: 300px;
+    width: 300px;
+    padding: 5px;
+  }
+
+  footer {
+    margin-top: auto;
+  }
+
+  .social {
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+    border-top: 2px solid darkgray;
+    padding-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .social_icon {
+    list-style-type: none;
+  }
 }
 
