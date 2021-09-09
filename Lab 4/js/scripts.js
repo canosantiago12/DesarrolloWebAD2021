@@ -51,10 +51,12 @@ function markAll() {
 }
 
 function deleteAll() {
-    var tasks = document.getElementsByName("toDo");
-    for(var i = 0; i < tasks.length; i++) {
+    var tasks = document.getElementById("listTasks");
+    /* for(var i = 0; i < tasks.length; i++) {
         if(tasks[i].checked) {
             tasks[i].parentElement.remove();
         }
-    }
+    } */
+
+    tasks.innerHTML = "";
 }
