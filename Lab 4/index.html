@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Todo</title>
+  <title>Todo Practica</title>
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
@@ -26,8 +26,8 @@
               <div class="panel-body">
                 <form class="todoForm">
                   <fieldset>
-                    <textarea class="newTodo form-control"></textarea>
-                    <button type="submit" class="submitButton"> 
+                    <textarea class="newTodo form-control" id="textField"></textarea>
+                    <button type="submit" class="submitButton" id="postButton"> 
                       Post Todo
                     </button>
                   </fieldset>
@@ -40,17 +40,17 @@
               <div class="panel-heading">
                 <h3>List of todo's</h3>
               </div>
-              <div class="panel-body" class="listOfTodos">
-
+              <div class="panel-body" class="listOfTodos" id="listTasks">
+ 
               </div>
               <div class="buttons">
-                <button class="clearButton btn-info"> 
+                <button class="clearButton btn-info" id="clearButton"> 
                   Clear all Todo's
                 </button>
-                <button class="markAllButton btn-success"> 
+                <button class="markAllButton btn-success" id="markButton"> 
                   Mark all Todo's
                 </button>
-                <button class="deleteButton btn-danger"> 
+                <button class="deleteButton btn-danger" id="deleteButton"> 
                   Delete all Todo's
                 </button>
               </div>
@@ -63,4 +63,5 @@
       Todo list application
     </footer>
   </body>
+  <script src="./js/scripts.js">  </script>
 </html>

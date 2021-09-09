@@ -16,37 +16,37 @@ body{
 }
 
 fieldset{
-    text-overflow: clip;
-    margin-bottom: 30px;
-    border-radius: 10px;
-    border-color: transparent;
-    padding: 20px;
-    margin: auto;
-    margin-top:20px;
+  text-overflow: clip;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  border-color: transparent;
+  padding: 20px;
+  margin: auto;
+  margin-top:20px;
 }
 
 .formElement{
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    font-size: 1em;
-    padding: 5px 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 1em;
+  padding: 5px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 90%;
 }
 
 .wrapper {
-    min-width: 320px;
-    height: auto;
+  min-width: 320px;
+  height: auto;
 }
 
 .todoTitle{
-    vertical-align: middle;
-    color: #333;
-    font-size: 25px;
-    margin: 10px auto;
-    width: 200px;
+  vertical-align: middle;
+  color: #333;
+  font-size: 25px;
+  margin: 10px auto;
+  width: 200px;
 }
 
 .submitButton{
@@ -84,4 +84,12 @@ fieldset{
   overflow:hidden;
   background-color:#2994DA;
   text-align: center;
+}
+
+.lbTask {
+  margin-left: 10px;
+  padding: 5px 10px;
+  color: rgb(66, 66, 66);
+  background-color: rgba(49, 49, 49, 0.068);
+  border-radius: 10px;
 }
