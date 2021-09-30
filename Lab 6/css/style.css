@@ -31,16 +31,17 @@ button{
     padding: 15px;
 }
 .checar{
-    background-color:green;
+    background-color:rgb(116, 177, 116);
     padding: 7px 12px;
     font-size: 12px;
     border: 0;
     color: white;
-    border-radius: 3px;
+    border-radius: 5px;
     text-align: center;
+    margin-right: 10px;
 }
 .del{
-    background-color: red;
+    background-color: rgb(255, 121, 121);
     padding: 7px 12px;
     font-size: 12px;
     border: 0;
@@ -56,8 +57,12 @@ button{
     background-color: #D9534F;
     opacity: 0.6;
 }
-.chec > p{
+.chec {
     text-decoration: line-through;
-}.itemShop{
+    color: gray;
+}
+.itemShop{
+    color: gray;
+    padding-bottom: 10px;
     font-style: italic;
 }
