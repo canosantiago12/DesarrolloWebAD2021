@@ -1,0 +1,37 @@
+<%- include ("./partials/_header") %>
+
+
+
+<div class="container">
+  <a href ="/newPost"><button type="button" class="btn btn-primary">Create New Post</button></a>
+</div>
+
+<main role="main" class="container">
+  <div class="row">
+    <div class="col-md-8 blog-main">
+      <% if(entries.length > 0) { %>
+        <% for (var i = 0; i < entries.length; i++) { %> 
+          <div class="blog-post">
+            <h2 class="blog-post-title">Lab 9 - BLOG</h2>
+            <p class="blog-post-meta">November 16, 2014 by <a href="#">Mark</a>     </p>
+            <h2 class="blog-post-title"><%= entries[i].title %></h2>
+            <p class="blog-post-meta"><%= entries[i].post_date.toLocaleString('default', { month: 'long' }) %> <%= entries[i].post_date.getDate() %>, <%= entries[i].post_date.getFullYear() %>   by <a href="#"> <%= entries[i].author %>  </a>     </p>
+            <p><%= entries[i].post_data %></p>
+            <a class = "btn btn-danger" href ="/delete/<%= entries[i]._id %>"> Delete </a>
+            <a class = "btn btn-info" href ="/edit/<%= entries[i]._id %>"> Edit </a>
+          </div>
+        <% } %> 
+      <% } else { %>
+        <h2 class="blog-post-title" style="text-align: center;">Lab 9 - BLOG</h2>
+        <h1 style="text-align: center;">There are no Posts</h1>
+      <% } %>
+    </div>
+  </div>
+</main>
+
+<style>
+
+</style>
+
+
+<%- include ("./partials/_footer") %>
